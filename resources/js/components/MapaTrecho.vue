@@ -1,6 +1,5 @@
 <script>
 import { ref, watch, onMounted, defineProps } from "vue";
-import { LMap, LTileLayer, LGeoJson } from "@vue-leaflet/vue-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 

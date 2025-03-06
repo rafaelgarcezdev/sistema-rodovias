@@ -4,7 +4,7 @@ import axios from "axios";
 import MainLayout from "@/Pages/MainLayout.vue";
 import { usePage } from "@inertiajs/vue3";
 import TrechoForm from "@/Components/TrechoForm.vue";
-import MapaTrecho from "../../components/MapaTrecho.vue";
+import MapaTrecho from "@/Components/MapaTrecho.vue";
 
 const trechos = ref(JSON.parse(localStorage.getItem("trechos")) || []);
 const successMessage = ref("");
