@@ -20,20 +20,18 @@ export default {
     setup(props) {
         const map = ref(null);
 
-        // Função para carregar o trecho selecionado
         const carregarTrecho = async (trecho) => {
             try {
                 if (!trecho) {
                     return;
                 }
 
-                const geoJson = trecho.geo; // Acessando o campo geo
+                const geoJson = trecho.geo;
 
                 if (geoJson && geoJson.type === "Feature") {
-                    // Adicionar o GeoJSON do trecho selecionado ao mapa
                     if (map.value) {
                         L.geoJSON(geoJson).addTo(map.value);
-                        // Ajustar a vista do mapa para o centro do trecho
+
                         const bounds = L.geoJSON(geoJson).getBounds();
                         map.value.fitBounds(bounds);
                     }
@@ -46,13 +44,11 @@ export default {
         };
 
         onMounted(() => {
-            // Inicializar o mapa
             map.value = L.map("map").setView([-15.7801, -47.9292], 5); // Coordenadas iniciais
             L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             ).addTo(map.value);
 
-            // Carregar o trecho selecionado se houver
             if (props.trechoSelecionado) {
                 carregarTrecho(props.trechoSelecionado);
             }
