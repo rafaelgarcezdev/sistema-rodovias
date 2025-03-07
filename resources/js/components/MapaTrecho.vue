@@ -1,5 +1,5 @@
 <script>
-import { ref, watch, onMounted, defineProps } from "vue";
+import { ref, watch, onMounted } from "vue";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
