@@ -1,0 +1,73 @@
+{
+  "_MainLayout-558da333.js": {
+    "file": "assets/MainLayout-558da333.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "node_modules/leaflet/dist/images/layers-2x.png": {
+    "file": "assets/layers-2x-066daca8.png",
+    "src": "node_modules/leaflet/dist/images/layers-2x.png"
+  },
+  "node_modules/leaflet/dist/images/layers.png": {
+    "file": "assets/layers-1dbbe9d0.png",
+    "src": "node_modules/leaflet/dist/images/layers.png"
+  },
+  "node_modules/leaflet/dist/images/marker-icon.png": {
+    "file": "assets/marker-icon-574c3a5c.png",
+    "src": "node_modules/leaflet/dist/images/marker-icon.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-18c0e820.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/Pages/Trechos/Create.vue": {
+    "file": "assets/Create-e951c09e.js",
+    "imports": [
+      "resources/js/app.js",
+      "_MainLayout-558da333.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Trechos/Create.vue"
+  },
+  "resources/js/Pages/Trechos/Index.css": {
+    "file": "assets/Index-14e33093.css",
+    "src": "resources/js/Pages/Trechos/Index.css"
+  },
+  "resources/js/Pages/Trechos/Index.vue": {
+    "css": [
+      "assets/Index-14e33093.css"
+    ],
+    "file": "assets/Index-b2eb8289.js",
+    "imports": [
+      "resources/js/app.js",
+      "_MainLayout-558da333.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Trechos/Index.vue"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-d7f4b120.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/layers-1dbbe9d0.png",
+      "assets/layers-2x-066daca8.png",
+      "assets/marker-icon-574c3a5c.png"
+    ],
+    "css": [
+      "assets/app-d7f4b120.css"
+    ],
+    "dynamicImports": [
+      "_MainLayout-558da333.js",
+      "resources/js/Pages/Trechos/Create.vue",
+      "resources/js/Pages/Trechos/Index.vue"
+    ],
+    "file": "assets/app-cc6c6a67.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
