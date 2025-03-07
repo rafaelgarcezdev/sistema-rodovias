@@ -43,7 +43,7 @@ export default {
         };
 
         onMounted(() => {
-            map.value = L.map("map").setView([-15.7801, -47.9292], 5); // Coordenadas iniciais
+            map.value = L.map("map").setView([-15.7801, -47.9292], 5);
             L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             ).addTo(map.value);

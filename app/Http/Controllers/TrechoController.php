@@ -139,10 +139,10 @@ class TrechoController extends Controller
     
     public function getTrechosJson()
     {
-        // Obtém os trechos com as relações de UF e Rodovia
+        
         $trechos = Trecho::with(['uf', 'rodovia'])->get();
         
-        // Retorna os dados em JSON
+      
         return response()->json($trechos);
     }
 

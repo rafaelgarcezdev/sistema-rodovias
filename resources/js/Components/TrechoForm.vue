@@ -93,7 +93,6 @@ const cadastrarTrecho = async () => {
             : null;
         trechos.value.push(response.data);
 
-        // Limpar localStorage ao cadastrar
         localStorage.removeItem("dataReferencia");
         localStorage.removeItem("uf");
         localStorage.removeItem("rodovia");
